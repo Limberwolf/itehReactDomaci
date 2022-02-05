@@ -71,3 +71,13 @@ code {
 #pretraga-naslov {
   margin-top: 30px;
 }
+
+.formpretraga {
+  width: 500px;
+  margin-top: 30px;
+  margin-left: 700px;
+}
+
+#dugme_pretraga {
+  margin-top: 15px;
+}
