@@ -1,6 +1,7 @@
 import FormAddCity from "./FormAddCity";
 import { useEffect, useState } from 'react'
 import axios from 'axios'
+import Nav from './Nav'
 
 
 
@@ -18,6 +19,8 @@ function FirstPage() {
 
     return (
         <div className="first-page">
+            <Nav />
+            <h2>Forma za dodavanje novog grada</h2>
             <FormAddCity gradovi={gradovi} />
         </div>
     );
