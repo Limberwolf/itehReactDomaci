@@ -44,3 +44,18 @@ code {
   background-color: #04AA6D;
   color: white;
 }
+
+.form-add-city {
+  width: 500px;
+  margin-left: 700px;
+}
+
+#nova-forma-h2 {
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+#dugme_novi {
+  margin-top: 15px;
+  width: 130px;
+}
