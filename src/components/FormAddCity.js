@@ -1,4 +1,6 @@
 import { useState } from 'react'
+import { Link } from "react-router-dom";
+
 
 function FormAddCity(props) {
 
@@ -19,6 +21,8 @@ function FormAddCity(props) {
 
     return (
         <div className="form-add-city">
+
+
             <div className="add-city-fields">
                 <label>Ime: </label>
                 <input type={'text'} className="form-control" value={grad.ime} onChange={e => setGrad({ ...grad, ime: e.target.value })} />
@@ -32,6 +36,17 @@ function FormAddCity(props) {
                 <input type={'number'} className="form-control" value={grad.brojStanovnika} onChange={e => setGrad({ ...grad, brojStanovnika: e.target.value })} />
             </div>
             <button type="button" onClick={() => noviGrad(grad)} className="btn btn-primary" id="dugme_novi">Dodaj</button>
+            <div className="link">
+                <Link
+                    to='/search'
+                    state={{
+                        gradovi: gradovi2,
+                    }}
+                >
+                    <button className="btn btn-danger" id="dugme_pretraga">Predji na pretragu</button>
+                </Link>
+            </div>
+
         </div>
     );
 }
